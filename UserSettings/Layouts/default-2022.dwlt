@@ -317,7 +317,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 34faffff2cfbffff
+      m_ExpandedIDs: 2cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -736,9 +736,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.028186142, y: 1.0846891, z: -0.09191423}
+    m_Target: {x: -0.02279273, y: -0.12149775, z: 0.05375984}
     speed: 2
-    m_Value: {x: -0.028186142, y: 1.0846891, z: -0.09191423}
+    m_Value: {x: -0.02279273, y: -0.12149775, z: 0.05375984}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -788,9 +788,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0.7071067, y: -0.00000005096395, z: 0, w: 0.70710677}
   m_Size:
-    m_Target: 1.1485727
+    m_Target: 0.37211978
     speed: 2
-    m_Value: 1.2026939
+    m_Value: 0.38965422
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1028,7 +1028,7 @@ MonoBehaviour:
     m_SkipHidden: 1
     m_SearchArea: 1
     m_Folders:
-    - Assets/VRBiribiribou/3DModels
+    - Assets/VRBiribiribou/3DModels/Frames
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1036,30 +1036,30 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/VRBiribiribou/3DModels
+  - Assets/VRBiribiribou/3DModels/Frames
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\t9\GitHub\VRBiribiribou
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 8a590000
-    m_LastClickedID: 22922
-    m_ExpandedIDs: 00000000805900008659000000ca9a3b
+    m_SelectedIDs: c2590000
+    m_LastClickedID: 22978
+    m_ExpandedIDs: 00000000aa590000ac590000b859000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Materials
+      m_OriginalName: Materials
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 22970
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_SearchString: 
@@ -1073,7 +1073,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000080590000
+    m_ExpandedIDs: 00000000aa590000ac590000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1101,7 +1101,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000fc7600003a7e000008fc0200b6180100b81801004ab50000de8200002887000000000000
+    m_ExpandedInstanceIDs: c6230000fc7600003a7e000008fc0200b6180100b81801004ab50000de8200002887000000000000205a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1230,10 +1230,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1399
+    x: 1458
     y: 73
-    width: 520
-    height: 918
+    width: 461
+    height: 966
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
