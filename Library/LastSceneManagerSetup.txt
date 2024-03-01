@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/VRBiribiribou/Scenes/SampleScene.unity
+- path: Assets/VRBiribiribou/Scenes/t9.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
