@@ -17,7 +17,7 @@ public class GoalSystem : MonoBehaviour
     {
         if(CheckingGoal() == true)
         {
-
+            Debug.Log("Goal");
         }
     }
 
@@ -36,5 +36,7 @@ public class GoalSystem : MonoBehaviour
         }
         else { return false; }
     }
+    
+
 
 }
