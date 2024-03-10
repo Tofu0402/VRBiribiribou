@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rotator : MonoBehaviour
+public class RotatoChanger : MonoBehaviour
 {
     [SerializeField]
     [Tooltip("xŽ²‚Ì‰ñ“]Šp“x")]
