@@ -1,6 +1,5 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Splines;
 
@@ -11,6 +10,7 @@ public class GetNearestPoint : MonoBehaviour
    
    //オブジェクトの位置
    [SerializeField] private Transform inputPoint;
+   [SerializeField] private GameObject effect;
    
    // 解像度
    // 内部的にPickResolutionMin～PickResolutionMaxの範囲に丸められる
@@ -24,12 +24,27 @@ public class GetNearestPoint : MonoBehaviour
    [Range(1, 10)]
    private int _iterations = 2;
 
+   private AudioSource audioSource;
+   
+   private void Start()
+   {
+      audioSource = GetComponent<AudioSource>();
+   }
+
    private void Update()
    {
       float distance = GetPonit();
-      if (distance < 1f)
+      if (distance < 0.3f)
       {
-         Debug.Log(distance);
+         if (!audioSource.isPlaying)
+         {
+            audioSource.Play();
+         }
+      }
+      else
+      {
+         audioSource.Stop();
+         effect.SetActive(false);
       }
    }
 
