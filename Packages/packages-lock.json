@@ -107,7 +107,6 @@
         "com.unity.render-pipelines.core": "14.0.9",
         "com.unity.searcher": "4.9.2"
       }
-    },
     "com.unity.splines": {
       "version": "2.5.2",
       "depth": 0,
