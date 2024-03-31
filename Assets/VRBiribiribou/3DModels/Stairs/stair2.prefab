@@ -10,15 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 10af31676a9753c4fb36c2de4ff44a2c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 456.55023
+      value: 555.94794
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 10af31676a9753c4fb36c2de4ff44a2c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 43.489742
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 10af31676a9753c4fb36c2de4ff44a2c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -262.99936
+      value: -415.0718
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 10af31676a9753c4fb36c2de4ff44a2c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -56,6 +56,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stair2
       objectReference: {fileID: 0}
+    - target: {fileID: 5015415391883453526, guid: 10af31676a9753c4fb36c2de4ff44a2c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 646a2b2d59503f04dba2d144cfdc78b5, type: 2}
     - target: {fileID: 9009844060245207015, guid: 10af31676a9753c4fb36c2de4ff44a2c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
