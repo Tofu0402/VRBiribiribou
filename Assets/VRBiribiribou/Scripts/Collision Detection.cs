@@ -6,21 +6,22 @@ using UnityEngine.SceneManagement;
 public class CollisionDetection : MonoBehaviour
 {
     public static float Total;
-    void OnCollisionEnter(Collision other) //‘¼‚Ìcollider/rigidbody‚ÉG‚ê‚½‚Æ‚«‚ÉŒÄ‚Ño‚³‚ê‚é
+    void OnCollisionEnter(Collision other) //ä»–ã®collider/rigidbodyã«è§¦ã‚ŒãŸã¨ãã«å‘¼ã³å‡ºã•ã‚Œã‚‹
     {
         if (other.gameObject.CompareTag("Item"))
         {
             /*
             Timer timer;
-            GameObject obj = GameObject.Find("TimeManager"); // ƒIƒuƒWƒFƒNƒgiTimeManagerj ‚ÉƒAƒ^ƒbƒ`‚³‚ê‚½Timer‚ÌTimerCount•Ï”‚ğ’T‚·
+            GameObject obj = GameObject.Find("TimeManager"); // ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆï¼ˆTimeManagerï¼‰ ã«ã‚¢ã‚¿ãƒƒãƒã•ã‚ŒãŸTimerã®TimerCountå¤‰æ•°ã‚’æ¢ã™
             timer = obj.GetComponent<Timer>();
             Total = timer.TimerCount;
             Total = Total * 100;
-            PlayerPrefs.SetInt("SCORE", (int)Total); // ƒXƒRƒA‚ğSCORE‚É‘ã“ü
+            PlayerPrefs.SetInt("SCORE", (int)Total); // ã‚¹ã‚³ã‚¢ã‚’SCOREã«ä»£å…¥
             PlayerPrefs.Save();
-            SceneManager.LoadScene("GameOverScene"); // ƒQ[ƒ€ƒI[ƒo[‚Ìo—Í
+            SceneManager.LoadScene("GameOverScene"); // ã‚²ãƒ¼ãƒ ã‚ªãƒ¼ãƒãƒ¼ã®å‡ºåŠ›
             */
+            Debug.Log("GameOver");
         }
-        Debug.Log("GameOver");
+        
     }
 }

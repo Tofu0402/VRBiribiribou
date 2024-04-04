@@ -34,11 +34,12 @@ public class GetNearestPoint : MonoBehaviour
    private void Update()
    {
       float distance = GetPonit();
-      if (distance < 0.3f)
+      if (distance < 0.09f)
       {
          if (!audioSource.isPlaying)
          {
             audioSource.Play();
+            effect.SetActive(true);
          }
       }
       else
