@@ -26,6 +26,7 @@ public class GoalSystem : MonoBehaviour
         if(other.gameObject.tag == ("CheckPoint"))
         {
             count++;
+            Destroy(other.gameObject);
         }
     }
     private bool CheckingGoal()
