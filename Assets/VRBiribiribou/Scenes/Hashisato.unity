@@ -5245,13 +5245,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1316184611}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.3420201, y: 0, z: 0, w: 0.9396927}
-  m_LocalPosition: {x: 0, y: 55, z: -80}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 4.67, y: 9.3, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 40, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &1320338389
 GameObject:
   m_ObjectHideFlags: 0
@@ -5634,12 +5634,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1355156576}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -463.59998, y: -246.28, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1804542707}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1408587059
 GameObject:
@@ -7758,6 +7758,7 @@ GameObject:
   - component: {fileID: 1804542706}
   - component: {fileID: 1804542705}
   - component: {fileID: 1804542704}
+  - component: {fileID: 1804542708}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -7840,15 +7841,28 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1355156579}
   - {fileID: 1281561324}
   - {fileID: 314969754}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 463.59998, y: 246.28}
+  m_AnchoredPosition: {x: 464.6, y: 246.54}
   m_SizeDelta: {x: 927.19995, y: 487.59998}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &1804542708
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804542703}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 1
 --- !u!1 &1813285087
 GameObject:
   m_ObjectHideFlags: 0
@@ -9091,6 +9105,5 @@ SceneRoots:
   - {fileID: 849248021}
   - {fileID: 953208132}
   - {fileID: 1594919405}
-  - {fileID: 1355156579}
   - {fileID: 733175201}
   - {fileID: 1804542707}
