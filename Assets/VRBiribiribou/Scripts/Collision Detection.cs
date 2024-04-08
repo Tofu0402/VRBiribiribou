@@ -20,6 +20,7 @@ public class CollisionDetection : MonoBehaviour
             PlayerPrefs.Save();
             SceneManager.LoadScene("GameOverScene"); // ゲームオーバーの出力
             */
+
             Debug.Log("GameOver");
         }
         
