@@ -6,8 +6,13 @@ using UnityEngine.SceneManagement;
 public class CollisionDetection : MonoBehaviour
 {
     public static float Total;
+
+
     void OnCollisionEnter(Collision other) //他のcollider/rigidbodyに触れたときに呼び出される
     {
+        PlayerPrefs.SetInt("ButtonSwitch", 0);
+        PlayerPrefs.Save();
+
         if (other.gameObject.CompareTag("Item"))
         {
             /*
@@ -20,7 +25,8 @@ public class CollisionDetection : MonoBehaviour
             PlayerPrefs.Save();
             SceneManager.LoadScene("GameOverScene"); // ゲームオーバーの出力
             */
-
+            PlayerPrefs.SetInt("ButtonSwitch", 1);
+            PlayerPrefs.Save();
             Debug.Log("GameOver");
         }
         

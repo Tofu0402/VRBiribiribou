@@ -8,7 +8,7 @@ public class ButtonGameOver : MonoBehaviour
 
     public void OnPushedButton()
     {
-        //Debug.Log("何かに当たったにぇ"); // ログを表示する
-        SceneManager.LoadScene("GameOverScene"); //ゲームオーバーのシーン（GameOmerScene）に移動する
+        Debug.Log("何かに当たったにぇ"); // ログを表示する
+        //SceneManager.LoadScene("GameOverScene"); //ゲームオーバーのシーン（GameOmerScene）に移動する
     }
 }
