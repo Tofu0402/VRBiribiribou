@@ -28,8 +28,8 @@ public class ButtonManager : MonoBehaviour
             cam = mainCameraObj.GetComponent<Camera>();
             Vector3 camPos= cam.transform.position; //Main Camera‚ÌˆÊ’u‚ðŽæ“¾
             Transform trans = cam.transform; //Min Camera‚Ìtransform‚ðŽæ“¾
-            double rotateNum = Math.PI*(trans.localEulerAngles.y)/180;
-            Vector3 pos = new Vector3(camPos.x +Mathf.Sin((float)(rotateNum)), camPos.y, camPos.z+Mathf.Cos((float)(rotateNum))); 
+            double rotateNum = Math.PI*(trans.localEulerAngles.y)/180; //ƒ‰ƒWƒAƒ“‚É•ÏŠ·
+            Vector3 pos = new Vector3(camPos.x +Mathf.Sin((float)(rotateNum)), camPos.y, camPos.z+Mathf.Cos((float)(rotateNum)));
             GameObject btn = Instantiate(btnPrefab, pos, trans.rotation);
             btn.transform.SetParent(canvas.transform);
             buttonCheck = 1;

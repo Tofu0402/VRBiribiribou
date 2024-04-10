@@ -12118,7 +12118,7 @@ GameObject:
   - component: {fileID: 4204303054220817474}
   - component: {fileID: 7442566036097156074}
   m_Layer: 5
-  m_Name: CanvasButtons
+  m_Name: Canvas(Buttons)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
