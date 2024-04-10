@@ -25,8 +25,8 @@ public class CollisionDetection : MonoBehaviour
             PlayerPrefs.Save();
             SceneManager.LoadScene("GameOverScene"); // ゲームオーバーの出力
             */
-            PlayerPrefs.SetInt("ButtonSwitch", 1);
-            PlayerPrefs.Save();
+            PlayerPrefs.SetInt("ButtonSwitch", 1); //ButtonManagerに使った変数の検索
+            PlayerPrefs.Save(); //変数の保存
             Debug.Log("GameOver");
         }
         
