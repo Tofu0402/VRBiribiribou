@@ -6,6 +6,8 @@ public class GoalSystem : MonoBehaviour
 {
     [SerializeField] private int goalCount=3;
     [SerializeField] private int count;
+
+    private bool isOnce = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,8 +17,9 @@ public class GoalSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(CheckingGoal() == true)
+        if(CheckingGoal() &&isOnce)
         {
+            isOnce = false;
             Debug.Log("Goal");
         }
     }
