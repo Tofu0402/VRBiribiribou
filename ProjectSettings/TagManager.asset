@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CheckPoint
   - Item
+  - frame
   layers:
   - Default
   - TransparentFX

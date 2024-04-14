@@ -401,33 +401,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7209197704857565161, guid: fb26eaa29b0f8854784be20da179ca8f, type: 3}
   m_PrefabInstance: {fileID: 272353929}
   m_PrefabAsset: {fileID: 0}
---- !u!54 &117347747
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 117347741}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!136 &117347748
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -527,13 +500,11 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2936376474576530997, guid: fb26eaa29b0f8854784be20da179ca8f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7209197704857565161, guid: fb26eaa29b0f8854784be20da179ca8f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 117347747}
     - targetCorrespondingSourceObject: {fileID: 7209197704857565161, guid: fb26eaa29b0f8854784be20da179ca8f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 117347748}
@@ -569,7 +540,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
-  m_Range: 10
+  m_Range: 1.87
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -607,7 +578,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -1113,6 +1084,10 @@ PrefabInstance:
       propertyPath: _spline
       value: 
       objectReference: {fileID: 90368133}
+    - target: {fileID: 4909059752301270338, guid: 26d46eade6d76ef4ca9ad092440b13fc, type: 3}
+      propertyPath: m_MovementType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4909059752301270338, guid: 26d46eade6d76ef4ca9ad092440b13fc, type: 3}
       propertyPath: m_SmoothPosition
       value: 1
