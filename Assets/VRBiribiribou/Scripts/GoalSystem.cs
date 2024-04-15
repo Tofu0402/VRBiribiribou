@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GoalSystem : MonoBehaviour
 {
     [SerializeField] private int goalCount=3;
     [SerializeField] private int count;
-
+    public TMPro.TMP_Text text;
     private bool isOnce = true;
+
+    public GameObject canvas;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +24,9 @@ public class GoalSystem : MonoBehaviour
         {
             isOnce = false;
             Debug.Log("Goal");
+            canvas.SetActive(true);
+            text.text = "Game Clear!!";
+
         }
     }
 

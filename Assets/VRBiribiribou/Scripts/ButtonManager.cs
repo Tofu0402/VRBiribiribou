@@ -6,11 +6,8 @@ using UnityEngine.UI;
 
 public class ButtonManager : MonoBehaviour
 {
-    public Canvas canvas;
-    public GameObject btnPrefab;
+    public GameObject canvas;
     int buttonCheck = 0;
-    GameObject mainCameraObj;
-    Camera cam;
 
     // Start is called before the first frame update
     void Start()
@@ -24,14 +21,16 @@ public class ButtonManager : MonoBehaviour
         int Manager = PlayerPrefs.GetInt("ButtonSwitch");
         if (Manager == 1 && buttonCheck == 0)
         {
-            mainCameraObj = GameObject.Find("Main Camera"); //Main Camere‚Ìtag–¼‚ğŒŸõ
+            /*mainCameraObj = GameObject.Find("Main Camera"); //Main Camereã®tagåã‚’æ¤œç´¢
             cam = mainCameraObj.GetComponent<Camera>();
-            Vector3 camPos= cam.transform.position; //Main Camera‚ÌˆÊ’u‚ğæ“¾
-            Transform trans = cam.transform; //Min Camera‚Ìtransform‚ğæ“¾
-            double rotateNum = Math.PI*(trans.localEulerAngles.y)/180; //ƒ‰ƒWƒAƒ“‚É•ÏŠ·
+            Vector3 camPos= cam.transform.position; //Main Cameraã®ä½ç½®ã‚’å–å¾—
+            Transform trans = cam.transform; //Min Cameraã®transformã‚’å–å¾—
+            double rotateNum = Math.PI*(trans.localEulerAngles.y)/180; //ãƒ©ã‚¸ã‚¢ãƒ³ã«å¤‰æ›
             Vector3 pos = new Vector3(camPos.x +Mathf.Sin((float)(rotateNum)), camPos.y, camPos.z+Mathf.Cos((float)(rotateNum)));
             GameObject btn = Instantiate(btnPrefab, pos, trans.rotation);
-            btn.transform.SetParent(canvas.transform);
+            btn.transform.SetParent(canvas.transform);*/
+            
+            canvas.SetActive(true);
             buttonCheck = 1;
         }
 

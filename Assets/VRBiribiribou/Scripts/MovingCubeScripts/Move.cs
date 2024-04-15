@@ -73,7 +73,7 @@ public class Move : MonoBehaviour
             transform.Translate(Vector3.up * speed * Time.deltaTime);
             if (player != null)
             {
-                player.transform.Translate(Vector3.down * speed * Time.deltaTime);
+                player.transform.Translate(Vector3.up * speed * Time.deltaTime);
             }
         }
         
