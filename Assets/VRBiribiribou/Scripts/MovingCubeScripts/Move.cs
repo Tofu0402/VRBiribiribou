@@ -18,8 +18,10 @@ public class Move : MonoBehaviour
         // タイマーを更新する
         timer += Time.deltaTime;
 
+        if (timer > 30) return;
+
         // 一定時間が経過したら移動方向を変更する
-        if(timer>=changeDirectionInterval5){
+        else if(timer>=changeDirectionInterval5){
             movingVector = "up";
         }
         else if(timer >= changeDirectionInterval4){
