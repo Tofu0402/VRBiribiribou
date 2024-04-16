@@ -18,7 +18,7 @@ public class Move : MonoBehaviour
         // タイマーを更新する
         timer += Time.deltaTime;
 
-        if (timer > 30) return;
+        if (timer > 28) return;
 
         // 一定時間が経過したら移動方向を変更する
         else if(timer>=changeDirectionInterval5){

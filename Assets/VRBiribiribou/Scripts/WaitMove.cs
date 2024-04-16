@@ -6,10 +6,15 @@ using UnityEngine;
 public class WaitMove : MonoBehaviour
 {
     public GameObject movecube;
+
+    private AudioSource audioSource;
+    private bool isOnce = false;
+
+    [SerializeField] private AudioClip se;
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -20,6 +25,11 @@ public class WaitMove : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        movecube.GetComponent<Move>().enabled = true;
+        if (isOnce == false)
+        {
+            audioSource.PlayOneShot(se);
+            movecube.GetComponent<Move>().enabled = true;
+            isOnce = true;
+        }
     }
 }

@@ -8,6 +8,6 @@ public class ButtonGameOver : MonoBehaviour
 
     public void OnPushedButton()
     {
-        SceneManager.LoadScene("Tutorial"); //�Q�[���I�[�o�[�̃V�[���iGameOmerScene�j�Ɉړ�����
+        SceneManager.LoadScene("Title"); //�Q�[���I�[�o�[�̃V�[���iGameOmerScene�j�Ɉړ�����
     }
 }
